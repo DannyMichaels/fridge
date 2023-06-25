@@ -25,7 +25,7 @@ const itemsMap = (items) => {
   items.forEach(item => {
     itemsMap.set(item.name, item.value);
   })
-d
+
   return itemsMap;
 }
 
