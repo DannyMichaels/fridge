@@ -31,6 +31,6 @@ d
 
 const recipes = new Map();
 recipes.set('chicken noodle soup', [{name: 'peanut', value: 3}, {name: 'butter', value: 4}, {name: 'jelly', value: 1}])
-console.log(canMakeRecipe([{name: 'peanut', value: 3}, {name: 'butter', value: 3}, {name: 'jelly', value: 1}],recipes, 'chicken noodle soup')); //t 
+console.log(canMakeRecipe([{name: 'peanut', value: 3}, {name: 'butter', value: 3}, {name: 'jelly', value: 1}],recipes, 'chicken noodle soup')); // false because not enough butter 
 
-console.log(canMakeRecipe([{name: 'peanut', value: 3}, {name: 'butter', value: 4}, {name: 'jelly', value: 1}],recipes, 'chicken noodle soup')); //f
+console.log(canMakeRecipe([{name: 'peanut', value: 3}, {name: 'butter', value: 4}, {name: 'jelly', value: 1}],recipes, 'chicken noodle soup')); // true because enough butter
